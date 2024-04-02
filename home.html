@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0-alpha1/css/bootstrap-grid.min.css" integrity="sha512-zDDxSlYrbKTTfup/YyljmstpX+1jwjeg15AKS/fl26gRxfpD+HMr6dfuJQzCcFtoIEjf93SuCffose5gDQOZtg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>document</title> 
+    </head>
+    <body>
+        <div class="container mt-5">
+           <center> <h1>WELCOME TO USER</h1></center>
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card p-5">
+                        <h3>USER DETAILS</h3>
+                    <button class="btn btn-outline-primary"onclick="sub()">CLICK</button>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="card p-5">
+                        <h3>CREDIT DETAILS</h3>
+                        <button class="btn btn-outline-primary"onclick="sum()">CLICK</button>
+                    </div>
+                  </div>  
+                     <div class="col-sm-4">
+                        <div class="card p-5">
+                            <h3>DEBIT DETAILS</h3>
+                            <button class="btn btn-outline-primary"onclick="sup()">CLICK</button>
+                        </div>
+                     </div>          
+                     </div>
+                      </div>
+                      <script>
+                        function sub(){
+                            let pin=+prompt("enter your pin");
+                            if(pin===4321){
+                                //alert("success");
+                                location.href="details.html";
+                            }
+                            else{
+                                alert("invalid pin");
+                            }
+                        }
+
+                        function sum(){
+                            let pin=+prompt("enter your pin");
+                            if(pin===4321){
+                                //alert("success");
+                                location.href="credit.html";
+                            }
+                            else{
+                                alert("invalid pin");
+                            }
+                        }
+                        function sup(){
+                            let pin=+prompt("enter your pin");
+                            if(pin===4321){
+                                //alert("success");
+                                location.href="debit.html";
+                            }
+                            else{
+                                alert("invalid pin");
+                            }
+                        }
+                      </script>
+
+    </body>
+</html>

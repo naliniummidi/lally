@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      
+          <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>filter class</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <style>
+            .mainbox{
+                display:inline-flex;
+                flex-wrap:wrap;
+                justify-content:flex-start;
+            }
+            .card{
+                height:400px;
+                width:400px;
+                margin:1%;
+                padding:1%;
+            }
+            .card img{
+                height:300px;
+                width:100%;
+    
+            }
+        </style>
+</head>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="https://img.freepik.com/free-vector/gradient-colorful-sale-wallpaper_52683-55788.jpg"height="600px";width="300px" alt="First slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://st1.techlusive.in/wp-content/uploads/2023/04/Amazon-Great-Summer-Sale-1.jpg?impolicy=Medium_Widthonly&w=400&h=246" height="600px";width="300px" alt="Second slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="https://media.assettype.com/digitalterminal%2F2024-01%2Fcf971d26-f073-4543-a115-c0d139d3ba89%2FAcer_s_Republic_Day_Sale.jpg" height="600px";width="300" alt="Third slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      <div class="container mt-5"> 
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card" style="margin-top:50px;">
+                <img src="https://i.pinimg.com/originals/0c/8b/e6/0c8be6d9cccb866dbfed7b87bfdb038b.jpg" height="300px";width="100px"/>
+             <center><h1>MENS</center></h1>
+             <button onclick="show()">click</button>
+            </div>
+            <script>
+                function show(){
+                    location.href="firststage.html";
+                }
+            </script>
+        </div>
+        <div class="col-sm-4">
+            <div class="card" style="margin-top:50px;">
+            <img src="https://i.pinimg.com/736x/20/05/50/200550605739e54f78d95e5cd554f45c.jpg"/>
+         <center><h1>WOMENS</center></h1>
+         <button onclick="app()">click</button>
+        </div>
+        <script>
+            function app(){
+                location.href="womens.html";
+            }
+        </script>
+    </div> <div class="col-sm-4">
+        <div class="card" style="margin-top:50px;">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LMoMr5Oj05EJW7j0kcth66HqwPZ5k-I8Ao_wS1joBg&shttps://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_LMoMr5Oj05EJW7j0kcth66HqwPZ5k-I8Ao_wS1joBg&s"/>
+        <center><h1>KIDS</h1></center>
+     <button onclick="shop()">click</button>
+    </div>
+    <script>
+        function shop(){
+            location.href="kids.html";
+        }
+    </script>
+</div>
+      </div>
+      </div>
+      
+</body>
